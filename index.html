@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Code Editor</title>
+  </head>
+  <body>
+    <header class="heading">
+      <h1>SD Code Editor !</h1>
+    </header>
+    <div class="code-editor-container">
+      <!-- ------ HTML Editor ------ -->
+      <div class="code-editor html-editor">
+        <div class="head-editor">
+          <div class="left-head">
+            <img src="assets/html.png" alt="Img Not Found" width="25px" />
+            <span>HTML</span>
+          </div>
+          <div class="right-head">
+            <img
+              src="assets/copy.svg"
+              alt="Img Not found"
+              width="30px"
+              class="copy copy1"
+            />
+          </div>
+        </div>
+        <textarea class="html-input" spellcheck="false"></textarea>
+      </div>
+      <!-- ------ CSS Editor ------ -->
+      <div class="code-editor css-editor">
+        <div class="head-editor">
+          <div class="left-head">
+            <img src="assets/css.png" alt="Img Not Found" width="30px" />
+            <span>CSS</span>
+          </div>
+          <div class="right-head">
+            <img
+              src="assets/copy.svg"
+              alt="Img Not found"
+              width="30px"
+              class="copy copy2"
+            />
+          </div>
+        </div>
+        <textarea class="css-input" spellcheck="false"></textarea>
+      </div>
+      <!-- ------ JS Editor ------ -->
+      <div class="code-editor js-editor">
+        <div class="head-editor">
+          <div class="left-head">
+            <img src="assets/js.png" alt="Img Not Found" width="30px" />
+            <span>JS</span>
+          </div>
+          <div class="right-head">
+            <img
+              src="assets/copy.svg"
+              alt="Img Not found"
+              width="30px"
+              class="copy copy3"
+            />
+          </div>
+        </div>
+        <textarea class="js-input" spellcheck="false"></textarea>
+      </div>
+    </div>
+    <!---------- Output Container ------ -->
+    <div class="output-container">
+      <div class="output-head">
+        <span>OutPut</span>
+        <img id="save" src="assets/save.svg" alt="Img Not Found" />
+        <img id="full" src="assets/full.svg" alt="Img Not Found" />
+      </div>
+      <iframe id="output"> </iframe>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
